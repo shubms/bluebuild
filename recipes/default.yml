@@ -1,0 +1,12 @@
+name: default
+description: This is my personal OS image.
+
+base-image: ghcr.io/secureblue/kinoite-main-userns-hardened
+image-version: latest
+
+modules:
+  - from-file: common/tailscale.yml
+  - from-file: common/webcam.yml
+
+  - type: signing
+
