@@ -5,8 +5,6 @@ base-image: ghcr.io/secureblue/kinoite-main-userns-hardened
 image-version: latest
 
 modules:
-  - from-file: common/tailscale.yml
-  - from-file: common/webcam.yml
+  - from-file: common/packages.yml
 
   - type: signing
-
