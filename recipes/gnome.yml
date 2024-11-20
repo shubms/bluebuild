@@ -1,10 +1,11 @@
-name: default
+name: silverblue
 description: This is my personal OS image.
 
-base-image: ghcr.io/secureblue/kinoite-main-userns-hardened
+base-image: ghcr.io/secureblue/silverblue-main-userns-hardened
 image-version: latest
 
 modules:
   - from-file: common/packages.yml
+  - from-file: common/gnome-packages.yml
 
   - type: signing

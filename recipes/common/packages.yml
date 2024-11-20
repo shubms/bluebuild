@@ -1,6 +1,5 @@
 type: rpm-ostree
 install:
-  - kde-connect
   - profile-sync-daemon
   - qv4l2
   - tailscale
