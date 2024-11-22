@@ -1,5 +1,4 @@
 type: rpm-ostree
 install:
   - profile-sync-daemon
-  - qv4l2
   - tailscale
