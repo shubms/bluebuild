@@ -22,7 +22,7 @@ jobs:
       matrix:
         recipe:
             - gnome.yml
-            - kde.yml
+            #- kde.yml
     steps:
       - name: Build Custom Image
         uses: blue-build/github-action@v1.7
