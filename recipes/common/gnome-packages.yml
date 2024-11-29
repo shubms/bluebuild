@@ -4,3 +4,4 @@ install:
   - gnome-shell-extension-argos
   - gnome-shell-extension-caffeine
   - gnome-shell-extension-gsconnect
+  - gnome-shell-extension-just-perfection
