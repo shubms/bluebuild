@@ -1,5 +1,6 @@
 type: rpm-ostree
 install:
+  - gnome-shell-extension-appindicator
   - gnome-shell-extension-argos
   - gnome-shell-extension-caffeine
   - gnome-shell-extension-gsconnect
