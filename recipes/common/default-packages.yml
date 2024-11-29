@@ -4,4 +4,3 @@ install:
   - nvtop
   - profile-sync-daemon
   - tailscale
-  - xonsh
