@@ -1,7 +1,7 @@
 name: bluebuild
 on:
   schedule:
-    - cron: "00 06 * * *" # build at 06:00 UTC every day 
+    - cron: "17 07 * * *" # build at 07:17 UTC every day 
 
   push:
     paths-ignore:
@@ -32,3 +32,9 @@ jobs:
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
           maximize_build_space: true
+      - name: Cleanup old images
+        uses: actions/delete-package-versions@v5
+        with:
+              package-name: silverblue-custom-hardened
+              package-type: container
+              min-versions-to-keep: 60
