@@ -5,3 +5,6 @@ keys:
   - https://packages.microsoft.com/keys/microsoft.asc
 install:
   - code
+  - podman-compose
+  - podman-docker
+  - podman-tui
