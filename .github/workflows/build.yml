@@ -1,7 +1,7 @@
 name: bluebuild
 on:
   schedule:
-    - cron: "17 07 * * *" # build at 07:17 UTC every day 
+    - cron: "17 17 * * *"
 
   push:
     paths-ignore:
