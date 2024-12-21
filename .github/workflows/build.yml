@@ -32,6 +32,8 @@ jobs:
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
           maximize_build_space: false
+          squash: true
+          use_cache: true
       - name: Cleanup old images
         uses: actions/delete-package-versions@v5
         with:
