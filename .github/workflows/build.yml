@@ -6,7 +6,7 @@ on:
   push:
     paths-ignore:
       - "**.md"
-      
+
   pull_request:
   workflow_dispatch:
 jobs:
@@ -21,8 +21,8 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-            # - gnome.yml
-            - kde.yml
+          # - gnome.yml
+          - kde.yml
     steps:
       - name: Build Custom Image
         uses: blue-build/github-action@v1.8
@@ -33,9 +33,10 @@ jobs:
           pr_event_number: ${{ github.event.number }}
           maximize_build_space: false
           use_cache: true
+
       - name: Cleanup old images
         uses: actions/delete-package-versions@v5
         with:
-              package-name: kinoite-custom-hardened
-              package-type: container
-              min-versions-to-keep: 60
+          package-name: kinoite-custom-hardened
+          package-type: container
+          min-versions-to-keep: 60

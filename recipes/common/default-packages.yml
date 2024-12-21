@@ -3,5 +3,6 @@ install:
   - htop
   - iotop-c
   - nvtop
+  - papirus-icon-theme
   - profile-sync-daemon
   - tailscale
