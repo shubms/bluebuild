@@ -1,4 +1,5 @@
 type: rpm-ostree
 install:
   - kde-connect
+  - kontact
   - vlc
