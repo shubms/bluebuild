@@ -1,5 +1,6 @@
 type: rpm-ostree
 install:
+  - avahi-compat-libdns_sd
   - htop
   - iotop-c
   - nvtop
