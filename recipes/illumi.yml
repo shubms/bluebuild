@@ -1,0 +1,12 @@
+name: illumi
+description: OS image for my laptop.
+
+base-image: ghcr.io/ublue-os/bluefin-dx
+image-version: stable
+
+modules:
+  - from-file: common/default-packages.yml
+  - from-file: common/desktop-packages.yml
+  - from-file: common/gnome-packages.yml
+
+  - type: signing

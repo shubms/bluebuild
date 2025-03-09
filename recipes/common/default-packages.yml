@@ -1,9 +1,10 @@
 type: rpm-ostree
 install:
-  - avahi-compat-libdns_sd
+  - distrobox
+  - dua-cli
+  - helix
   - htop
   - iotop-c
   - nvtop
-  - papirus-icon-theme
-  - profile-sync-daemon
   - tailscale
+  - xonsh
